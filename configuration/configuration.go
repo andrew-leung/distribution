@@ -544,7 +544,7 @@ func (auth Auth) MarshalYAML() (interface{}, error) {
 
 // Notifications configures multiple http endpoints.
 type Notifications struct {
-	// Event is the configuration for event format that is sent to each Endpoint.
+	// EventConfig is the configuration for the event format that is sent to each Endpoint.
 	EventConfig Events `yaml:"events,omitempty"`
 	// Endpoints is a list of http configurations for endpoints that
 	// respond to webhook notifications. In the future, we may allow other
